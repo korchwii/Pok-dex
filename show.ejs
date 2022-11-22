@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>pokedex entry <%=data.name%></h1>
+        <a href="/pokemon"> return to pokedex entries</a>
+    </div>
+    <img src="<%=data.img%>"/>
+    <ul>
+        <%for(let i=0;i<data.type.length;i++){%>
+            <li><%=data.type[i]%></li>
+            <%}%>
+    </ul>
+    <p>HP: <%=data.stats.hp%></p>
+    <p>Attack: <%=data.stats.attack%></p>
+    <p>Defense: <%=data.stats.defense%></p>
+    <a href="/pokemon/<%=id%>/edit"> edit</a>
+    <form action="/pokemon/<%=id%>?_method=DELETE"method=POST><input type='submit'value='destroy'/> </form>
+
+</body>
+</html>

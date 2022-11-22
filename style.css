@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+}
+
+.header{
+    display: flex;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+.header button{
+    height: 30px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    gap: 10px;
+}
+
+.card img{
+    width: 70px;
+}
+

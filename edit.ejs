@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/pokemon/<%=id%>?_method=PUT"method=POST> 
+        <input name='name'value='<%=data.name%>' type='text'/>
+        <input name='type'value='<%=data.type[0]%>' type='text'/>
+        <input name='hp'value='<%=data.stats.hp%>' type='number'/>
+        <input name='attack'value='<%=data.stats.attack%>' type='number'/>
+        <input name='defense'value='<%=data.stats.defense%>' type='number'/>
+        <input name='img'value='<%=data.img%>' type='text'/>
+        <input value='submit' type='submit'/>
+    
+    </form>
+</body>
+</html>
